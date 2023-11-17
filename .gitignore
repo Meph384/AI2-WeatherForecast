@@ -22,3 +22,8 @@
 ###> Jetbrains ###
 /.idea
 ###< Jetbrains ###
+
+###> Reports
+/*.pdf
+/*.docx
+###< Reports
