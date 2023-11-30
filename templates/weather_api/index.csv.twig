@@ -1,0 +1,30 @@
+<style>
+    table {
+        border: 1px solid black;
+    }
+
+    table * {
+        border: 1px solid black;
+    }
+</style>
+
+<table>
+    <thead>
+        <th>city</th>
+        <th>country</th>
+        <th>date</th>
+        <th>celsius</th>
+        <th>fahrenheit</th>
+    </thead>
+    <tbody>
+        {% for measurement in measurements %}
+        <tr>
+            <td>{{ city }}</td>
+            <td>{{ country }}</td>
+            <td>{{ measurement.date | date('Y-m-d') }}</td>
+            <td>{{ measurement.celsius }}</td>
+            <td>{{ measurement.fahrehneit }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
